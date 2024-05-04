@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Arabic Writer</title>
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="كاتب عربي بسيط يسمح لك بالكتابة باللغة العربية بسهولة ويسر."
+    />
+    <meta name="keywords" content="كتابة, عربي, نص, textarea, كاتب, بسيط" />
+    <title>كاتب عربي بسيط</title>
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-</head>
-<body>
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+    <link rel="manifest" href="icons/site.webmanifest" />
+  </head>
+  <body>
     <div class="container">
-        <textarea id="area" onkeyup="convertLatinToArabic()"></textarea>
+      <label for="area" class="label-text">إبدأ الكتابة هنا:</label>
+      <textarea
+        id="area"
+        aria-label="مكان لكتابة النص باللغة العربية"
+        onkeyup="convertLatinToArabic()"
+        placeholder="ابدأ الكتابة هنا. لا تقلق، سيتم حفظ رسائلك النصية حتى لو ذهبت إلى مكان آخر."
+      ></textarea>
     </div>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

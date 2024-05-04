@@ -6,15 +6,25 @@
 
 body {
     font-family: 'NotoNaskh', Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #789461;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    margin: 20px auto;
-    width: 80%;
+    margin: 10px auto;
+    width: 90%;
     text-align: center; /* Center content horizontally */
+}
+
+.label-text {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #294B29;
+    margin-bottom: 8px;
+    margin-top: 12px;
+    display: block;
+    direction: rtl; /* Right-to-left text direction */
 }
 
 #include {
@@ -24,15 +34,31 @@ body {
 }
 
 #area {
-    border: 2px solid #717986; /* Reduced border thickness */
-    color: #333; /* Darker text color for better readability */
-    font-family: 'NotoNaskh', Arial, sans-serif; /* Change font family */
-    font-size: 26px; /* Slightly reduce font size for better readability */
+    border: 0.5px dotted #50623A; /* Reduced border thickness */
+    color: #334433; /* Darker text color for better readability */
+    font-family: 'NotoNaskh', Aptos, sans-serif; /* Change font family */
+    font-size: 20px; /* Slightly reduce font size for better readability */
     height: calc(100vh - 40px); /* Take full height of the viewport minus padding */
     width: calc(100% - 20px); /* Take full width of the viewport minus padding */
     max-width: 800px; /* Limit width to 800px */
-    padding: 8px; /* Add padding for better spacing */
+    padding: 12px; /* Add padding for better spacing */
     resize: none; /* Disable textarea resizing */
     overflow-y: scroll; /* Add scrollbar when content overflows */
     direction: rtl; /* Right-to-left text direction */
+    font-weight: 500;
+    background-color: #DBE7C9 ;
+    box-shadow: 0 0 10px  #294B29, 0 0 05px  #294B29AA;
+    line-height: 1.5;
+    border-radius: 10px;
+}
+
+#area:focus {
+    border-color: #294B29; /* Adjust border color for focus state */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 05px  #294B29AA, 0 0 05px  #294B29AA;
+    border-radius: 10px;
+}
+
+#area::placeholder {
+    color: #33443366; /* Adjust placeholder text color */
 }
