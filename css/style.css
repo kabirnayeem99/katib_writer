@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'NotoNaskh';
     src: url('../font/noto_naskh.ttf') format('truetype');
+    font-display: swap;
 }
 
 body {
