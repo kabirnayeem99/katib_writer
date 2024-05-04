@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'NotoNaskh';
+    src: url('../font/noto_naskh.ttf') format('truetype');
+}
+
+body {
+    font-family: 'NotoNaskh', Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center; /* Center content horizontally */
+}
+
+#include {
+    width: 100%;
+    max-width: 800px; /* Limit width to 800px */
+    margin-top: 20px;
+}
+
+#area {
+    border: 2px solid #717986; /* Reduced border thickness */
+    color: #333; /* Darker text color for better readability */
+    font-family: 'NotoNaskh', Arial, sans-serif; /* Change font family */
+    font-size: 26px; /* Slightly reduce font size for better readability */
+    height: calc(100vh - 40px); /* Take full height of the viewport minus padding */
+    width: calc(100% - 20px); /* Take full width of the viewport minus padding */
+    max-width: 800px; /* Limit width to 800px */
+    padding: 8px; /* Add padding for better spacing */
+    resize: none; /* Disable textarea resizing */
+    overflow-y: scroll; /* Add scrollbar when content overflows */
+    direction: rtl; /* Right-to-left text direction */
+}
