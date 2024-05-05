@@ -2,6 +2,7 @@ const CACHE_NAME = "minimalistic_writer_cache_v1";
 const urlsToCache = [
   "/",
   "/index.html",
+  "/font/noto_naskh.ttf",
   "/css/style.css",
   "/js/script.js",
   "/manifest/icon-192x192.png",
@@ -18,15 +19,12 @@ self.addEventListener("install", async (event) => {
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     (async () => {
-      // Enable navigation preload if it's supported.
-      // See https://developers.google.com/web/updates/2017/02/navigation-preload
       if ("navigationPreload" in self.registration) {
         await self.registration.navigationPreload.enable();
       }
     })()
   );
 
-  // Tell the active service worker to take control of the page immediately.
   self.clients.claim();
 });
 
